@@ -1,8 +1,6 @@
-### Hi there 👋
+### Hola, aqui inicia todo 👋
 
 <!--
-**ClausDesarrollo/ClausDesarrollo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
 Es una lista de cursos enfocados a herramientas, programas, métodos, lenguajes para resumir y simplificar la implementación de los mismos
 
 - 👯 Si alguien se anima a colaborar agregando contenido, son bienvenidos 
