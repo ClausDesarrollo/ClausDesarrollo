@@ -1,0 +1,13 @@
+borrar gitlab proyecto
+Borrar proyecto 
+
+1- ve a "progect page"
+2- selecciona "settings"
+3- selecciona la seccion de "General" (debes estar en el repositorio que deseas borrar)
+4- Si tienes suficientes permisos, al final de la pagina aparece un boton para "Advance settings" o Remove proyect" (en las nuevas verciones de gitlab)
+5- preciona ok y sigue las instruciones 
+
+
+
+
+
