@@ -1,0 +1,62 @@
+GFB07092101
+GFB07092101: 109690f91b94ed013cd7312f38b62734c509a522
+
+
+/opt/sonar-scanner-3.1.0.1141-linux.
+
+
+colocamos en :
+\\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes\codeEscan\_data
+
+sonar.project
+     este tiene que tener:sonar.projectKey=GFB07092101 
+          (o nombre de proyecto)
+     sonar.host.url=http://localhost:9000 (el host)
+codigo (el codigo o carpeta con el codigo)
+
+
+en powersheld  colocamos el tocken de login que nos dio sonar al crear proyecto en mi caso fue "109690f91b94ed013cd7312f38b62734c509a522" no olvidar colocar el hosting "en mi caso fue localhost:9000:
+docker run --network=host --rm -e SONAR_HOST_URL=http://localhost:9000 -e SONAR_LOGIN="109690f91b94ed013cd7312f38b62734c509a522" -v "codeEscan:/usr/src" -v "libSonarQube:/opt/sonar-scanner/.sonar/cache" sonarsource/sonar-scanner-cli
+
+
+en dcoker necesitamos la imagen de sonaqube corriendo
+luego su volume (en el volumen es una carpeta donde colocamos el codigo a escanear)
+
+1)instalamos docker*
+2)levantar el servidor, todo lo pueden hacer con este comando en powershield, si no tienen la imagen la descarga la primera vez:
+
+docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube:9.0.1-community
+
+3) entrando en el navegador "localhost:9000/" se entra a sonar el pasword y contraseña son admin/admin (cambialos)
+4) crea nuevo poryecto y guarda en key, el nombre y el codigo de loging que te va a dar
+5) crea en powersheld estos dos volumenes o los directorios (carpetas) en donde vamos alojar el código que usara SonarQube, esto lo hice con Docker Volume, cree dos (busca como crear volumenes)
+
+docker volumen create codeEscan
+docker volumen create libSonarQube
+
+
+6)En codeEscan van a colocar el código y carpetas de codigo que van a escanear y un archivo de propierties (sonar.project) tiene lo mínimo y con eso se puede usar en cualquier código a escanear.
+este tiene que tener dentro de su texto:
+sonar.projectKey=GFB07092101 (o nombre de proyecto)
+sonar.host.url=http://localhost:9000 (el host)
+
+- En libSonarQube es una carpeta opcional, aquí guarda archivos temporales de las librerías que usa con las reglas del código, se usa para que cada que lo ejecuten no descargue estas cada vez. 
+
+- Si no se requiere usar Docker volume pueden usar el directorio completo donde este el código  (C:/…..) en vez de solo “codeEscan” en el siguiente comando para empezar el escaneo pero es opcional. 
+
+7) colocamos todo (el sonar.project y el codigo) en este directorio : \\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes
+
+8) Por ultimo para ejecutar el escaneo seria con este comando en powersheld, esta es otra imagen de Docker que es el cliente de escaneo, la primera vez si no lo tienen lo va a descargar asi que no te apures si aparecen dos imagenes de sonarqube en docker:
+
+docker run --network=host --rm -e SONAR_HOST_URL=http://localhost:9000 -e SONAR_LOGIN="cadena creada al inicio" -v "codeEscan:/usr/src" -v "libSonarQube:/opt/sonar-scanner/.sonar/cache" sonarsource/sonar-scanner-cli
+
+9) Al terminar el proceso van a http://localhost:9000  y actualizan la página y ya podrán ver los resultados de los escaneos.
+
+
+
+nota - “ sonar.java.binaries. 
+Utilice la ruta a la carpeta que contiene los archivos de clases como valor. Agregue esta propiedad en el archivo sonar-project.properties. 
+Ejemplo, las clases están en el directorio ‘target/classes’, por lo que quedaría:
+sonar.java.binaries=target/classes
+Si no tiene, se excluyen agregando esta línea 
+sonar.exclusions=*.java “
