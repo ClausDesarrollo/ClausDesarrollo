@@ -1,0 +1,44 @@
+
+
+========================================================================================
+========================================================================================
+Funciona!!!!!!!!! ya escaneo!!!!
+docker run --network=host --rm -e SONAR_HOST_URL=http://localhost:9000 -e SONAR_LOGIN="c1faaf4baa9251e1e18f047a551fddbeb4e99ca0" -v "codeEscan:/usr/src" -v "libSonarQube:/opt/sonar-scanner/.sonar/cache" sonarsource/sonar-scanner-cli
+========================================================================================
+========================================================================================
+docker run --network=host --rm -e SONAR_HOST_URL=http://localhost:9000 -e SONAR_LOGIN="c1faaf4baa9251e1e18f047a551fddbeb4e99ca0" -v "codeEscan:/usr/src" sonarsource/sonar-scanner-cli
+
+
+sonar.projectBaseDir=C:\Users\A2277852\Docker\codeEscan
+
+key TA0310
+token 423b9627a6be5b4eeae69a7363f0719a548925dc
+key A0411: 
+Tocken: 8051765e476c715ff73834dec545943f0826a3c3
+docker run --network=host --rm -e SONAR_HOST_URL=http://localhost:9000 -e SONAR_LOGIN="423b9627a6be5b4eeae69a7363f0719a548925dc" -v "C:\Users\A2277852\Docker\codeEscan\sonar.projectkey.properties" -v "libSonarQube:/opt/sonar-scanner/.sonar/cache" sonarsource/sonar-scanner-cli
+
+
+docker run \
+    --rm \
+    -e SONAR_HOST_URL="http://localhost:9000" \
+    -e SONAR_LOGIN="423b9627a6be5b4eeae69a7363f0719a548925dc" \
+    -v "${YOUR_REPO}:/usr/src" \
+    sonarsource/sonar-scanner-cli
+
+
+key A0411: 
+Tocken: 8051765e476c715ff73834dec545943f0826a3c3
+
+
+docker run \
+	 --rm \
+	 -e SONAR_HOST_URL="http://${SONAR_HOST}" \
+	 -e SONAR_LOGIN="${SONAR_TOKEN}" \
+	 -v "${REPO}:/usr/src" \
+	 -v $CONFIG_FILE:/opt/sonar-scanner/conf/sonar-scanner.properties \
+	 -v `pwd`/cacerts:/opt/java/openjdk/lib/security/cacerts \
+	 sonarsource/sonar-scanner-cli
+
+
+
+
