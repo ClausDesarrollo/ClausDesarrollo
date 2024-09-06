@@ -6,11 +6,26 @@ Soy un arquitecto de software con experiencia en Java, Spring Boot, React.js, My
 
 ## Mis Videos de YouTube
 
-### Video 1: Clean Architecture
-![Video 1](https://youtu.be/AQtFXo_R5Sg?si=EuCGQnus2EyUy4_t)
+<p align="center">
+  <a href="https://youtu.be/VsyNBufL10Q?si=OnoGiA0A4ZYz9kHB" target='_blank'>
+    <img width='40%' src="https://img.youtube.com/vi/VsyNBufL10Q/mqdefault.jpg" alt="Video 1" style="width: 200px; margin: 10px;">
+  </a>
+  <br>
+  <strong>Video 1: Título del Video</strong>
+</p>
 
-### Video 2: Go Echo ECHO 
-![Video 2](https://youtu.be/D84nD2R3jag?si=RBIdaTiNFjq8a40l)
+<p align="center">
+  <a href="https://youtu.be/VsyNBufL10Q?si=OnoGiA0A4ZYz9kHB" target='_blank'>
+    <img width='40%' src="https://img.youtube.com/vi/VsyNBufL10Q/mqdefault.jpg" alt="Video 1" style="width: 200px; margin: 10px;">
+  </a>
+  <br>
+  <strong>Video 2: Título del Video</strong>
+</p>
 
-### Video 3: IA Redes Neuronales
-![Video 3](https://youtu.be/7xjaadMnSNs?si=74zh8iDLp4LsOudy)
+<p align="center">
+  <a href="https://youtu.be/VsyNBufL10Q?si=OnoGiA0A4ZYz9kHB" target='_blank'>
+    <img width='40%' src="https://img.youtube.com/vi/VsyNBufL10Q/mqdefault.jpg" alt="Video 1" style="width: 200px; margin: 10px;">
+  </a>
+  <br>
+  <strong>Video 3: Título del Video</strong>
+</p>
