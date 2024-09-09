@@ -1,4 +1,4 @@
-# ¡Hola! Soy clausDesarrollo 👋
+# ¡Hola! Soy ClausDesarrollo 👋
 
 ## Sobre mí
 
