@@ -40,7 +40,7 @@ I am a software architect with experience in Java, Spring Boot, React.js, MySQL 
   
   <a href="https://youtu.be/YIdw6UZvK5A?si=WsPvvCyee-v6gCF9" target='_blank'>
     <img src="https://img.youtube.com/vi/YIdw6UZvK5A/mqdefault.jpg" alt="Video 3" style="width: 70%; height: 70%;">
-    <br><strong>Git Workflow, CI/CD part 1/3</strong>
+    <br><strong>Git Workflow, CI/CD (1/3)</strong>
   </a>
 </p>
 
