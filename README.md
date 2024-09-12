@@ -29,17 +29,17 @@ I am a software architect with experience in Java, Spring Boot, React.js, MySQL 
 
 <p align="center">
   <a href="https://youtu.be/VsyNBufL10Q?si=VsyNBufL10Q?si=tvoHzLo4EdXmf5lB" target='_blank'>
-    <img src="https://img.youtube.com/vi/VsyNBufL10Q/mqdefault.jpg" alt="Video 1" alt="Video 1" style="width: 65%; height: 65%;">
+    <img src="https://img.youtube.com/vi/VsyNBufL10Q/mqdefault.jpg" alt="Video 1" alt="Video 1" style="width: 35%; height: 35%;">
     <br><strong>The Cleancode</strong>
   </a>
   
   <a href="https://youtu.be/Y2RPdeTq974?si=eiHKQx2xverZMy6h" target='_blank'>
-    <img src="https://img.youtube.com/vi/Y2RPdeTq974/mqdefault.jpg" alt="Video 2" style="width: 65%; height: 65%;">
+    <img src="https://img.youtube.com/vi/Y2RPdeTq974/mqdefault.jpg" alt="Video 2" style="width: 35%; height: 35%;">
     <br><strong>Lets build a API</strong> 
   </a>
   
   <a href="https://youtu.be/YIdw6UZvK5A?si=WsPvvCyee-v6gCF9" target='_blank'>
-    <img src="https://img.youtube.com/vi/YIdw6UZvK5A/mqdefault.jpg" alt="Video 3" style="width: 65%; height: 65%;">
+    <img src="https://img.youtube.com/vi/YIdw6UZvK5A/mqdefault.jpg" alt="Video 3" style="width: 35%; height: 35%;">
     <br><strong>Git & CI/CD (1/3)</strong>
   </a>
 </p>
